@@ -12,4 +12,14 @@ for num in range(0, 10):
 print(f"The numbers entered are {num_list}")
 
 # Append all numbers and those with one duplicate
+duplicate = []
+no_duplicate = []
+
+for number in num_list:
+    if num_list.count(number) == 1:
+        no_duplicate.append(number)
+    else:
+        duplicate.append(number)
+
 # Print list
+print(no_duplicate, duplicate)
