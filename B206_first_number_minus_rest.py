@@ -7,6 +7,9 @@ all_numbers = []
 for num in range(0, 10):
     number = float(input(f"Enter number {num + 1}: "))
     all_numbers.append(number)
-    
+
 # First number minus sum of last 9
+result = all_numbers[0]
+for number in all_numbers[1:]:
+    result -= number 
 # Print result
