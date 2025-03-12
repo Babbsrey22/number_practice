@@ -2,16 +2,19 @@
 # Display all numbers that have duplicate
 
 num_list = []
-duplicates = []
 
 # Input 10 numbers
 for num in range(0, 10):
-    number = float(input(f"Enter number {num + 1}: "))
+    number = int(input(f"Enter number {num + 1}: "))
     num_list.append(number)
 
+print(f"The numbers input are {num_list}")
+
 # Append duplicates
+duplicates = []
+
 for number in num_list:
-    if num_list.count(number) != 1:
+    if number not in duplicates and num_list.count(number) > 1:
         duplicates.append(number)
 
-print(duplicates)
+print(f"The numbers that have duplicates are {duplicates}")
