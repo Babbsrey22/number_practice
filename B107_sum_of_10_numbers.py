@@ -1,4 +1,6 @@
-# Batch 1 Prog07: Create a program that ask user to input 10 numbers. Print the sum of all the numbers.
+# Prog07: Create a program that ask user to input 10 numbers,
+# Print the sum of all the numbers
+
 sum = 0
 
 # Input 10 numbers (for loop)
