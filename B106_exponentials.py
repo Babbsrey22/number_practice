@@ -5,4 +5,4 @@ num2 = float(input("Enter the second number: "))
 
 # Print exponential
 exponential = num1 ** num2
-print(exponential)
+print(f"{num1} raised to {num2} is {exponential}")
