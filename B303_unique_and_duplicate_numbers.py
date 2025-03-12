@@ -8,9 +8,13 @@
 num_list = []
 
 while True:
-    number = (input("Enter any number: "))
-    num_list.append(number)
-    if num_list.count(number) == 1:
-        print("Unique")
-    else:
-        print("Duplicate")
+    try:
+        number = int(input("Enter any number: "))
+        num_list.append(number)
+        if num_list.count(number) == 1:
+            print("Unique")
+        else:
+            print("Duplicate")
+    except ValueError:
+        print("Stopping number input...")
+        break 
