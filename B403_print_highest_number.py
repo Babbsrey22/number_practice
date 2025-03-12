@@ -9,4 +9,9 @@ while True:
     try:
         number = int(input("Enter any number: "))
         num_list.append(number)
-# From inputs, print highest num
+    except ValueError:
+        print("Stopping number input...")
+        print(num_list)
+        highest_num = max(num_list)
+        print(f"The highest number is {highest_num}")
+        break
