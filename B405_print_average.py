@@ -10,5 +10,11 @@ while True:
         number = int(input("Enter any number: "))
         num_list.append(number)
     except ValueError:
-# From inputs, compute average
+        print("Stopping input...")
+        break
+
 # Print average 
+count = len(num_list)
+amount = sum(num_list)
+average = amount / count
+print(average)
