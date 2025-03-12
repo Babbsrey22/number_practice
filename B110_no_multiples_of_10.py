@@ -6,5 +6,7 @@ not_multiple_10 = []
 # Append numbers 0-100 without multiples of 10
 for num in range(0, 101):
     if num % 10 != 0:
-        not_10.append(num)
+        not_multiple_10.append(num)
+
 # Print list
+print(not_multiple_10)
