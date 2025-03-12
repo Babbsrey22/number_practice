@@ -9,4 +9,6 @@ while num < 100:
     num += 1
     if num % 5 != 0:
         not_multiple_of_5.append(num)
+
 # Print list
+print(not_multiple_of_5)
