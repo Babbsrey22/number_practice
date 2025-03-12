@@ -12,4 +12,7 @@ for num in range (0, 10):
     if number % 2 != 0:
         odd_count += 1
         odd_numbers.append(number)
+
 # Print list and count
+print(odd_numbers)
+print(f"Out of 10 numbers, {odd_count} are odd.")
