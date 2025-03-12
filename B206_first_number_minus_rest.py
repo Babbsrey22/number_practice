@@ -12,4 +12,6 @@ for num in range(0, 10):
 result = all_numbers[0]
 for number in all_numbers[1:]:
     result -= number 
+
 # Print result
+print(result)
