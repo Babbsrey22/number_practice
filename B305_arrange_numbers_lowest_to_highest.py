@@ -10,5 +10,7 @@ while True:
     try:
         number = int(input("Enter any number: "))
         num_list.append(number)
-# From inputs, arrange low to high 
-# Print list 
+    except ValueError:
+        num_list.sort()
+        print(num_list)
+        break
