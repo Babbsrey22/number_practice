@@ -8,5 +8,6 @@ odd_num = -1
 while odd_num < 99:
     odd_num += 2
     odd_numbers.append(odd_num)
-    
+
 # Print list
+print(odd_numbers)
