@@ -4,7 +4,9 @@
 even_numbers = []
 
 # Append even numbers 0-100
-for num in range(0, 10):
+for num in range(0, 101):
     if num % 2 == 0:
-        even_number.append(num)
+        even_numbers.append(num)
+
 # Print list
+print(even_numbers)
