@@ -5,14 +5,16 @@
 # Input infinite amount of number until ValueError
 
 num_list = []
-most_common_number = 0
+duplicates = []
 
 while True:
     try:
-        for num in range(0, 10):
-            number = int(input(f"Enter number {num + 1}: "))
-            num_list.append(number)
+        number = int(input("Enter number: "))
+        num_list.append(number)
     except ValueError:
+        if num_list.count(number) > 1:
+            duplicates.append(number)
         break
 
-print(f"The numbers input are {num_list}")
+highest_num = max(duplicates)
+print(f"The number with the most duplicates is {highest_num}")
