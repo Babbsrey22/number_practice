@@ -4,9 +4,13 @@
 # Display "Duplicate" after input when the inputted number have duplicate
 
 # Input infinite amount of numbers until ValueError
-while True:
-    number = int(input("Enter any number: "))
-    
-# For duplicates, print "Duplicate" after input
 
-# For no duplicates, print "Unique" after input
+num_list = []
+
+while True:
+    number = (input("Enter any number: "))
+    num_list.append(number)
+    if num_list.count(number) == 1:
+        print("Unique")
+    else:
+        print("Duplicate")
