@@ -8,8 +8,13 @@ for num in range(0, 10):
     number = int(input(f"Enter number {num + 1}: "))
     num_list.append(number)
 
-# Append numbers with no duplicate 
+print(f"The numbers entered are {num_list}")
 
-for num in num_list:
-    if number.count(num) == 1:
-        print(number)
+# Append numbers with no duplicate 
+no_duplicates = []
+
+for number in num_list:
+    if num_list.count(number) == 1:
+        no_duplicates.append(number)
+        
+print(f"The numbers with no duplicates are {no_duplicates}")
