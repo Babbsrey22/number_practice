@@ -10,4 +10,7 @@ while True:
     try:
         number = int(input("Enter any number: "))
         num_list.append(number)
-# Arrannge highest to lowest
+    except ValueError:
+        num_list.sort(reverse=True)
+        print(num_list)
+        break
